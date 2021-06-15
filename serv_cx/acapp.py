@@ -32,7 +32,7 @@ rap = [
 faq = SimilarityMatchingSkill(data_path = 'bot_cx.csv',
                               x_col_name = 'Q', 
                               y_col_name = 'A',
-                              save_load_path = './model_bot_it',
+                              save_load_path = './model_bot_cx',
                               config_type = 'tfidf_autofaq',
                               edit_dict = {},
                               train =1)
@@ -122,5 +122,5 @@ def delete_rap(tutorial_id):
 
 
 if __name__ == '__main__': 
-    acapp.run(host='127.0.0.1', port=5010)
+    acapp.run(host='0.0.0.0', port=5200)
 
